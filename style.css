@@ -223,6 +223,7 @@ html, body {
   padding: .75rem;
   padding-top: 0px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .chat-title-wrapper {
@@ -289,7 +290,6 @@ html, body {
   overflow: hidden;
   overflow-y: scroll;
   margin-top: 1.25rem;
-  z-index: 9;
 }
 
 .text-box-bot {

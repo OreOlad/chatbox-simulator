@@ -45,7 +45,7 @@ export default function Messaging({chatName}) {
     event.preventDefault();
   }
   return(
-    <>
+    <div style={{zIndex: 10}}>
       {
         <div className={state.emojiShow ? "emoji-poppup" : "hidden"}>
           <form className="emoji-form" onSubmit={handleEmoji}>
@@ -79,6 +79,6 @@ export default function Messaging({chatName}) {
         <input className="texting-input" type="text" value={state.text} onChange={handleChange} autoFocus /><button className="open-emoji" type="button" onClick={emojiSetter}>😀</button><button className="send"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcGhNyI_IbIv5vjc-OccvCcg7rZW7BL8Hh0g&usqp=CAU" className="send-icon"/></button>
       </form>
     </div>
-    </>
+    </div>
   );
 }
